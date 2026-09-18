@@ -26,7 +26,7 @@ function App() {
   // Get all items from MongoDB
   const fetchItems = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/items");
+      const response = await fetch("https://smart-lost-and-found-6zj7.onrender.com/api/items");
 
       const data = await response.json();
 
@@ -50,7 +50,7 @@ function App() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:5000/api/items", {
+      const response = await fetch("https://smart-lost-and-found-6zj7.onrender.com/api/items", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -92,7 +92,7 @@ function App() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:5000/api/items", {
+      const response = await fetch("https://smart-lost-and-found-6zj7.onrender.com/api/items", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
